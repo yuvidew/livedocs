@@ -20,7 +20,7 @@ export default async function Home() {
     <main className="home-container">
       <Header className=" sticky left-0 top-0" >
         <div className=" flex items-center gap-2 lg:gap-4">
-          <Notifications/>
+          <Notifications />
           <SignedIn>
             <UserButton />
           </SignedIn>
@@ -40,7 +40,16 @@ export default async function Home() {
           </div>
 
           <ul className="document-ul">
-            {documents.data.map(({ id, metadata, createdAt }: any) => (
+            {documents.data.map(({ id, metadata, createdAt }:
+              {
+                id: string,
+                metadata: {
+                  title : string,
+                  creatorId? : string,
+                  email? : string
+                },
+                createdAt : string
+              }) => (
               <li key={id} className="document-list-item">
                 <Link
                   href={`/documents/${id}`}
@@ -63,7 +72,7 @@ export default async function Home() {
                     </p>
                   </div>
                 </Link>
-                <DeleteModal roomId = {id} />
+                <DeleteModal roomId={id} />
               </li>
             ))}
           </ul>

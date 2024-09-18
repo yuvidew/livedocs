@@ -23,7 +23,8 @@ export const RoomProviderComp = ({
                 return await getDocumentUsers({
                     roomId , 
                     text , 
-                    currentUser: clerkUser?.emailAddresses[0].emailAddress!
+                    // currentUser: clerkUser?.emailAddresses[0].emailAddress!,
+                    currentUser: clerkUser?.emailAddresses[0].emailAddress ?? ''
                 })
             }}
         >
