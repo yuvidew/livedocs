@@ -4,7 +4,6 @@ import { getDocument } from '@/lib/actions/room.actions';
 import { getClerkUsers } from '@/lib/actions/user.actions';
 import { currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation';
-import React from 'react'
 
 const Document = async ({ params: { id } }: SearchParamProps) => {
     const clerkUser = await currentUser();
