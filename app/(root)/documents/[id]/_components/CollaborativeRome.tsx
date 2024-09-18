@@ -26,7 +26,7 @@ export const CollaborativeRome = ({
     const containerRef = useRef<HTMLDivElement>(null)
     const inputRef = useRef<HTMLInputElement>(null)
 
-    const updateTitleHandler = async (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const updateTitleHandler = async (e: KeyboardEvent) => {
         if(e.key === "Enter"){
             setLoading(true)
             try {

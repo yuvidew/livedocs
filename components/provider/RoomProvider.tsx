@@ -19,7 +19,6 @@ export const RoomProviderComp = ({
             resolveUsers={async ({ userIds}) => {
                 return await getClerkUsers({userIds})
             }}
-            // this is help to identify which user are which rooms
             resolveMentionSuggestions={async({text , roomId}) => {
                 return await getDocumentUsers({
                     roomId , 
@@ -28,12 +27,9 @@ export const RoomProviderComp = ({
                 })
             }}
         >
-            {/* <RoomProvider id="my-room"> */}
                 <ClientSideSuspense fallback={<Loader/>}>
                     {children}
                 </ClientSideSuspense>
-            {/* </RoomProvider> */}
         </LiveblocksProvider>
-
     )
 }

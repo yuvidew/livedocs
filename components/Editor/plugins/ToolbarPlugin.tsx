@@ -37,7 +37,7 @@ import {
   useState,
   useSyncExternalStore,
 } from 'react';
-import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold, Heading1, Heading2, Heading3, Italic, Redo, StrikethroughIcon, Underline, Undo } from 'lucide-react';
+import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold, Heading1, Heading2, Heading3, Italic, Redo2, StrikethroughIcon, Underline, Undo2 } from 'lucide-react';
 
 const LowPriority = 1;
 
@@ -76,7 +76,7 @@ export default function ToolbarPlugin() {
       }),
       editor.registerCommand(
         SELECTION_CHANGE_COMMAND,
-        (_payload, _newEditor) => {
+        () => {
           $updateToolbar();
           return false;
         },
@@ -137,7 +137,7 @@ export default function ToolbarPlugin() {
           }}
           className="toolbar-item spaced"
         >
-          <i className="format undo" />
+          <Undo2 className='h-5 w-5 dark:text-stone-100 text-stone-100' />
         </ToggleGroupItem>
         <ToggleGroupItem
           value="redo"
@@ -148,7 +148,7 @@ export default function ToolbarPlugin() {
           }}
           className="toolbar-item"
         >
-          <i className="format redo" />
+          <Redo2 className='h-5 w-5 dark:text-stone-100 text-stone-100'/>
         </ToggleGroupItem>
       </ToggleGroup>
       <Divider />
