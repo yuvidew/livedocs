@@ -27,7 +27,8 @@ Backend powered by **Convex**, user authentication via **Clerk**, and error moni
 
 ## 📸 Screenshots
 
-> _Include screenshots or a demo GIF here!_
+> ![image](https://github.com/user-attachments/assets/0c879e8c-d2b6-4c12-aef1-c48eb5efb23d)
+
 
 ## 🛠️ Installation
 
