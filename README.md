@@ -1,38 +1,38 @@
-# 📝 Google Docs Clone — Real-Time Collaborative Text Editor
+# 📝 Google Docs Clone - Real-Time Collaborative Text Editor
 
-A fully functional **Google Docs-style** text editor built with **Next.js**, **Tailwind CSS**, **Shadcn UI**, and powered by **Liveblocks** for real-time collaboration.  
-Backend powered by **Convex**, user authentication via **Clerk**, and error monitoring with **Sentry**.
+A real-time collaborative text editor inspired by **Google Docs**, built with modern tools like **Next.js**, **Tailwind CSS**, **Shadcn UI**, **Clerk**, **Liveblocks**, and **Sentry**.
 
-## 🚀 Features
+Collaborate live with others, see user cursors, and enjoy a clean, responsive UI with secure authentication and error tracking.
 
-- 🔐 Authentication with Clerk
-- 📄 Real-time collaborative editing (Liveblocks)
-- 🧠 Serverless backend using Convex
-- 💅 Beautiful UI built with Tailwind CSS and Shadcn
-- 🐞 Error tracking and monitoring using Sentry
-- ☁️ Auto-saving and real-time syncing
-- 🌓 Light/dark theme support
+---
 
-## 🧱 Tech Stack
+## 🚀 Demo
 
-| Tech       | Purpose                     |
-|------------|-----------------------------|
-| [Next.js](https://nextjs.org/) | React framework for frontend |
-| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling |
-| [Shadcn UI](https://ui.shadcn.dev/) | Beautiful, accessible UI components |
-| [Convex](https://www.convex.dev/) | Real-time backend and database |
-| [Liveblocks](https://liveblocks.io/) | Real-time presence and collaboration |
-| [Clerk](https://clerk.dev/) | Authentication and user management |
-| [Sentry](https://sentry.io/) | Error tracking and performance monitoring |
+[Live Demo](https://livedocs-roan-eight.vercel.app/) <!-- Replace with your actual link -->
 
-## 📸 Screenshots
+---
 
-> ![image](https://github.com/user-attachments/assets/0c879e8c-d2b6-4c12-aef1-c48eb5efb23d)
+## ✨ Features
+
+- 🔒 **Authentication** with Clerk
+- 👥 **Real-time collaboration** with Liveblocks
+- ✍️ Collaborative text editing
+- 🟢 User presence and live cursors
+- 💾 Auto-saving of documents
+- 🎨 Beautiful and responsive UI with Tailwind CSS & Shadcn UI
+- 🛡️ Error monitoring and performance tracking with Sentry
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Shadcn UI](https://ui.shadcn.com/)
+- **Collaboration**: [Liveblocks](https://liveblocks.io/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **Monitoring**: [Sentry](https://sentry.io/)
+- **Hosting**: Vercel (recommended)
+
+---
 
 
-## 🛠️ Installation
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/google-docs-clone.git
-cd google-docs-clone
