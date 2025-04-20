@@ -109,7 +109,7 @@ export const CollaborativeRome = ({
                             {loading && <p className=' text-sm text-gray-400'>Saving...</p>}
                         </div>
                         <div className='flex w-full flex-1 justify-end gap-2'>
-                            {(currentUserType !== undefined && users !== undefined )&& (
+                            {(currentUserType !== undefined && users !== undefined && currentUserType == "editor")&& (
                                 <ShareModal
                                 roomId = {roomId}
                                 collaborators = {users}
