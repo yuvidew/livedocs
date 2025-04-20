@@ -47,14 +47,10 @@ export const ShareModal = ({
         setLoading(false);
     }
 
-     const onOpenChange = () => {
-        if (currentUserType == "editor") {
-            setOpen(true)
-        }
-    }
+
 
     return (
-        <Dialog open={open} onOpenChange={onOpenChange}>
+        <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger>
                 <Button className=" gradient-blue flex h-9 gap-1 px-4" disabled={currentUserType !== "editor"}>
                     <Image
